@@ -5,7 +5,9 @@ void main(){
     char text[50];
     int size = 0,status_code = 0;
     scanf("%s",&text);
-    size = strlen(text);
+    while (text[size]!='\0'){
+        size++;
+    }
     int mid = (size / 2)+1;
     for (int z = 0; z < size; z++)
     {
