@@ -1,16 +1,16 @@
 #include <stdio.h>
 void main()
 {
-    char word[51],swap;
-    int length = 0,repeats = 0,i, j;
+    char word[50],swap;
+    int len = 0,repeats = 0,i, j;
 
     scanf("%s", &word);
 
-    while (word[length]!='\0'){
-        length++;
+    while (word[len]!='\0'){
+        len++;
     } 
-    for(j=0;j<length-1; j++) {
-        for(i=0;i<length-1;i++) { 
+    for(j=0;j<len-1; j++) {
+        for(i=0;i<len-1;i++) { 
             if (word[i] > word[i+1]) {
                 swap = word[i];
                 word[i]   = word[i+1];
@@ -20,11 +20,11 @@ void main()
     }
 
     i = 0;
-    while (i<length-1) {
+    while (i<len-1) {
         if (word[i]==word[i+1]) {
             repeats++;
             j=i+2;
-            while (j<length && word[i]==word[j]){
+            while (j<len && word[i]==word[j]){
                 j++;
             }
             i = j;
