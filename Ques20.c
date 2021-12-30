@@ -1,6 +1,4 @@
 #include<stdio.h>
-#include<string.h>
-
 void main(){
     char text[50];
     int size = 0,status_code = 0;
