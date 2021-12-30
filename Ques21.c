@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main(void)
+void main()
 {
     char word[51],swap;
     int length = 0,repeats = 0,i, j;
@@ -34,6 +34,4 @@ int main(void)
     }
 
     printf("%d", repeats);
-
-    return 0;
 }
