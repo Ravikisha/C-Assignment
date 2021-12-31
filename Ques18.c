@@ -2,9 +2,12 @@
 
 void main(){
     char student_name[50];
-    int charcount =0;
+    int charcount =0,sizeOfName=0;
     scanf("%s",&student_name);
-    for (int i = 0; i < 50; i++)
+    while(student_name[0] != '\0'){
+        sizeOfName++;
+    }
+    for (int i = 0; i < sizeOfName; i++)
     {
         if(student_name[i] != ' '){
             charcount++;
