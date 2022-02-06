@@ -34,5 +34,5 @@ void convertIntoPound(float a){
 
 void convertIntoFahrenheit(float a){
     float mesure = (32+(1.8*a));
-    printf("%.6f ft\n", mesure);
+    printf("%.6f f\n", mesure);
 }
